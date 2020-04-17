@@ -1,0 +1,558 @@
+
+
+
+@media only screen AND (min-width:200px) AND (max-width:750px) {
+    #sections{
+        display:none; 
+    }
+    
+    #sideNav{
+            display: block;
+            height: 70px;
+            width: 70px;
+            float:right;
+            font-size: 50px;
+            background-color:white;
+            border-radius:50%;
+            text-align: center;
+            margin: 20px;
+            transition: 0.5s;
+    }
+    
+    #overlay{
+            height:0%;
+            width:100%;
+            position:fixed;
+            z-index:2;
+            top:0;
+            left:0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.7);
+            overflow-x:hidden;
+            transition: 0.5s;
+    }
+    
+    #overlay-content{
+            position: relative;
+            top:25%;
+            width:100%;
+            text-align: center;
+            margin-top:30px;
+    }
+    
+    #overlay a{
+            padding:8px;
+            text-decoration: none;
+            font-size: 36px;
+            color:#818181;
+            display:block;
+            transition:0.5s;
+    }
+    
+    #overlay a:hover , #overlay a:focus{
+            color:#f1f1f1;
+    }
+    
+    #overlay #closeBTN{
+            position:absolute;
+            top:100px;
+            right:20px;
+            font-size:60px;
+    }
+    
+    footer .end div a img{
+        width: 50px;
+        height:50px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+
+*{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        padding:0px;
+        margin:0px;
+        scroll-behavior:smooth;
+                
+}
+
+
+@media only screen and (min-width: 750px) {
+
+    #sideNav{
+            display: none;
+            z-index: 1;
+            }
+            
+    .galleryContainer ul{
+            margin-top: 24px;
+            padding-right: 50px;
+            text-align: center;
+            z-index: 1;
+            width: 100%;
+            background: black;
+        }
+        
+        .galleryContainer #sections li{
+            display: inline;
+            float: right;
+            padding: 5px;
+            text-align: center;
+            margin:5px;
+            border: 2px solid transparent;
+           
+        }
+        
+        
+        .galleryContainer #sections li:hover{
+            animation-name: btnList;
+            animation-duration: 0.4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        #overlay{
+            display:none;
+        }
+        
+        
+        
+        .galleryContainer #sections  .register:hover {
+            background-color:#00fa9d;
+            height:20px;
+            padding:5px;
+            border:0px solid transparent;
+        }
+        
+        .galleryContainer #sections .register:hover >  a:after {
+            content: " >>";
+        }
+        
+     
+        }
+        
+        footer .end div a img{
+        width: 75px;
+        height:75px;
+    }
+    
+        
+}
+
+
+
+h2::after{}h2{}
+
+h3::after{
+    content:"";
+    width:60px;
+    height: 2px;
+    margin: 4px auto;
+    background-color: #7f00ff;
+    padding: 0px;
+    display: block;
+}
+
+
+
+
+h2{
+    text-align: center;
+    color: #333224;
+    padding-bottom: 20px;
+    line-height: 2;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h2::after{
+    content:"";
+    width:80px;
+    height: 3px;
+    margin: 10px auto;
+    background-color: #7f00ff;
+    padding: 0px;
+    display: block;
+}
+
+#navbar{
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a13dff;
+    transition: all 0.3s ease-in-out;
+}
+
+#navImg{
+    width:150px;
+    height:70px;
+    margin:15px;
+    opacity:0.5;
+    transition: all 0.5s ease-out;
+}
+
+#navImg:hover{
+    opacity: 1;
+}
+
+.slideShowContainer #nav img{
+        display:none;
+        background-color: black;
+        width:100px;
+        height: 100px;
+    }
+    
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.galleryContainer{
+    margin: auto;
+}
+
+
+#topic{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+.galleryContainer .slideShowContainer{
+    overflow: hidden;
+    position: relative;
+    animation: moveLeft 4s infinite ;
+}
+
+.galleryContainer .slideShowContainer .imgHolder{
+    cursor:pointer;
+    object-fit: cover;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+}
+
+.galleryContainer .slideShowContainer .imgHolder img{
+    height: 100vh;
+    width:100%;
+}
+
+
+
+.galleryContainer .slideShowContainer .imgHolder p{
+    position:relative;
+    width: 100%;
+    text-align: center;
+    bottom:60px;
+    color:white;
+    font-weight: 500;
+    background-color:rgba(0,0,0,0.4);
+}
+
+
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+
+.slideShowContainer div .dots{
+    display: inline-block;
+    position:relative;
+    bottom: 25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #bbb;
+    cursor:pointer;
+    z-index: 1;
+    transition: background-color 0.6s ease;
+}
+
+.slideShowContainer div .dots:hover{
+    background-color: #717171;
+}
+
+
+
+.fading{
+    animation:fadingIn 0.4s 1 ease-out;
+    }
+    
+@keyframes fadingIn{
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+ }
+ 
+
+#about div{
+    width:100%;]
+    height:500px;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+
+
+#about div div {
+    height:400px;
+    width: 300px;
+    color: red;
+    background-color:yellow;
+    margin: 2%  ;
+    border-radius:20px;
+    background-position: center;
+    object-fit: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#about div .vision {
+    background-image : linear-gradient(
+                                        rgba(0,0,0,0.5),
+                                        rgba(0,0,0,0.5)
+                                      ) , url("https://ieee-zsb.org/mutex/images/Vision.jpg");
+    
+
+}
+
+#about div .mission {
+    background-image : linear-gradient(
+                                        rgba(0,0,0,0.5),
+                                        rgba(0,0,0,0.5)
+                                      ) , url("https://ieee-zsb.org/mutex/images/mission.jpg");
+}
+#about div .goals {
+    background-image : linear-gradient(
+                                        rgba(0,0,0,0.5),
+                                        rgba(0,0,0,0.5)
+                                      ) , url("https://ieee-zsb.org/mutex/images/Goals.jpg");
+}
+
+#about div div ,#expected_mutext div div {
+    box-shadow: 10px 10px rgba(0,0,0,0.7);
+    }
+
+#about div h3 ,#expected_mutext h3{
+    text-align: center;
+    margin-top:50px;
+    font-size: 100px;
+    padding : 10px 10% ;
+    font-size: 18px;
+    font-weight:900;
+    padding:10px;
+    color:white;
+}
+
+#about p:first-child  {
+    color: black;
+}
+
+#about  p  ,#expected_mutext p{
+    text-align: center;
+    padding : 10px 10% ;
+    font-size: 14px;
+    font-weight:400;
+    height: 80%;
+    color:white;
+    margin-top:20px;
+    line-height: 1.5;
+    
+    }
+
+
+#expected_mutext div{
+    width:100%;]
+    height:500px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#expected_mutext div div:hover ,#about div div:hover{ 
+    transform:scale(1.1);
+}
+
+#expected_mutext p{
+    color:white;
+}
+#expected_mutext div div {
+    height: 350px;
+    width: 250px;
+    color: red;
+    display: inline-block;
+    background-color:blue;
+    margin:20px ;
+    border-radius:20px;
+    transition: all 0.5s ease;
+    transition: all 0.3s ease-in-out;
+}
+
+#expected_mutext div .learning{
+    background-image: linear-gradient(
+                                      rgba(0,0,0,0.5),
+                                      rgba(0,0,0,0.5)
+                                      ),url(https://ieee-zsb.org/mutex/images/Learning.png);
+}
+
+#expected_mutext div .practising{
+    background-image: linear-gradient(
+                                    rgba(0,0,0,0.5),
+                                    rgba(0,0,0,0.5)
+                                    ),url(https://ieee-zsb.org/mutex/images/Practicing.png);
+}
+
+#expected_mutext div .networking{
+    background-image: linear-gradient(
+                                    rgba(0,0,0,0.5),
+                                    rgba(0,0,0,0.5)
+                                    ),url(https://ieee-zsb.org/mutex/images/Networking.png)
+}
+
+#expected_mutext div .pitching{
+    background-image:linear-gradient(
+                                    rgba(0,0,0,0.5),
+                                    rgba(0,0,0,0.5)
+                                    ),url(https://ieee-zsb.org/mutex/images/Pitching.png);
+}
+
+#statistics div{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+#statistics div div .line:after{
+    content:"";
+    display: inline-block;
+    width:1px;
+    height: 50px;
+    background-color:black;
+    margin:20px;
+}
+
+
+
+#speakers{
+    width:90%;
+    margin:auto;
+}
+
+#speakers div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+
+}
+
+#speakers div div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height:250px;
+    width:250px;
+    background: grey;
+    margin-top:20px;
+    text-align:center;
+    background-image: url("pic/stevejobs.jpg");
+    filter:grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+
+#speakers div div div p{
+    margin-bottom: 10px;
+    font-weight:400;
+    color:white;
+    text-align: center;
+}
+
+
+
+#speakers div div  :hover{
+    filter: grayscale(0%);
+    
+}
+#speakers div div div div{
+    height: 90px;
+    overflow: hidden;
+    background:linear-gradient(
+                                0deg,
+                                rgba(0, 0, 0, 1) 0%,
+                                rgba(0, 0, 0, 0.5) 75%,
+                                rgba(0, 0, 0, 0) 100%
+                                 );
+    
+}
+
+#speakers div div  :hover > div {
+    background-color:#a13dff;
+    opacity:0.8;
+    filter:grayscale(0%);
+    
+}
+@keyframes speakerMove{
+    from{
+        filter:grayscale(100%);
+        
+    }
+    to{
+        filter:grayscale(0%);
+    }
+}
+
+#sponsers .spon1,.spon2,.spon3,.spon4 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+    text-align:center;
+    margin:5px;
+
+}
+#speakers div .sp1 p {
+    margin:0px;
+    padding:0px;
+}
+
+#sponsers div p{
+    text-align: center;
+}
+
+
+footer .end{
+    background-color: #a13dff;
+    height: 300px;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+

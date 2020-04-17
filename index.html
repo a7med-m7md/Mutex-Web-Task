@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            
+        </title>
+        
+    </head>
+
+
+    <body onscroll="changeBackground();">
+        
+        <div id="overlay">
+                       <div id="overlay-content">
+                           <a href="#about">ABOUT</a>
+                           <a href="#speakers">SPEAKERS</a>
+                           <a href="#partners">PARTNERS</a>
+                           <a href="#top">EXHIBIT</a>
+                           <a href="#speakers">AGENDA</a>
+                           <a href="#top" >REGISTER</a>
+                       </div>
+                    </div>
+        
+        <div id="top" class="galleryContainer">
+            <div id="navbar" style="z-index: 3;" >
+                  
+                <img id="navImg"src="https://ieee-zsb.org/images/MUTEX%20White.png">
+                 <div>
+                    <ul id="sections" >
+                            <li class="register" style="transition:all 0.2s ease-in-out;"><a href="#">REGISTER</a></dvi></li>
+                            <li><a href="#top">AGENDA</a></li>
+                            <li><a href="#top">ECHIBIT</a></li>
+                            <li><a href="#partners">PARTENERS</a></li>
+                            <li><a href="#speakers">SPEAKERS</a></li>
+                            <li><a href="#about" >ABOUT</a></li>
+                    </ul>
+                </div>
+                 <div  id="sideNav">   
+                    <span id="openBTN" class="closed" onclick="navMenu();" style="cursor:pointer">&#9776</span>
+                 </div>
+            </div>
+            
+            <div class="slideShowContainer">
+                
+            
+                <div class="imgHolder fading">
+                    <img src="https://ieee-zsb.org/mutex/images/Header/WhatsApp%20Image%202019-11-22%20at%206.56.20%20PM.jpg">
+                    <p>MUTEX 2019</p>
+                </div>
+                
+                <div class="imgHolder fading">
+                    <img src="https://ieee-zsb.org/mutex//images/Header/Copy%20of%20_MG_9112.jpg" >
+                    <p>MUTEX 2018</p>
+                </div>
+                
+                <div class="imgHolder fading">
+                    <img src="https://ieee-zsb.org/mutex//images/Header/Copy%20of%20DSC_0175%20copy.jpg">
+                    <p>MUTEX 2017</p>
+                </div>
+                
+                <div style="text-align:center;">
+                    <span class="dots" onclick="currentClick(1);"></span>
+                    <span class="dots" onclick="currentClick(2);"></span>
+                    <span class="dots" onclick="currentClick(3);"></span>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <h2>ABOUT MUTEX</h2>
+        <br>
+        
+        <section id="about" class="fade">
+            
+            <p>MUTEX is the biggest technological annual event hosted by IEEE Zagazig SB.The event mainly focuses on introducing the latest technologies incomputer science fields to the audience and setting a clear path for themto follow.</p>
+            <div>
+                <div class="vision">
+                    <h3>VISION</h3>
+                    <p> Banishing the gap between the latest technology trends and the current community awareness.</p>
+                </div>
+            
+                
+                <div class="mission">
+                    <h3>MISSION</h3>
+                    <p>Establishing a link between the leading companies/organizations in the latest technologies or the ones that support the tech ecosystem and our community’s CS students, Engineers, Startups, and Techies through sets of talks, training, and workshops.</p>
+                </div>
+                
+                <div class="goals" >
+                    <h3>GOALS</h3>
+                    <p>Spread technological awareness among university students, startups, and investors of Al-Delta region.<br>
+                        Give the students the work experience in the latest technologies through workshops.<br>
+                        Connect Al-Delta tech ecosystem with resources and opportunities.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <h2 class="head">WHAT TO EXPECT AT MUTEX</h2>
+        <br>
+        <br>
+        <section id="expected_mutext" >
+            <div>
+                <div class="learning fade" >
+                    <h3>LEARNING</h3>
+                    <p> Banishing the gap between the latest technology trends and the current community awareness.</p>
+                </div>
+            
+                
+                <div class="practising fade">
+                    <h3>PRACTISING</h3>
+                    <p>Practice in hands-on/interactive workshops to gain practical experience</p>
+                </div>
+                
+                <div class="networking fade">
+                    <h3>NETWORKING</h3>
+                    <p>Meet Enterprise,
+                    Startups, Investors, and Techies who will all gather
+                    in one inspiring space for two days and connect with
+                    the Tech ecosystem.</p>
+                </div>
+                
+                <div class="pitching fade">
+                    <h3>PITCHING</h3>
+                    <p>Are you a Tech or Tech-enabled startup? This is an
+                    opportunity to fund your business and connect with investors,
+                    gain coverage in media publications,
+                    and extend to potential customers in Al-Delta region.
+                    And also an opportunity to apply in our pitching competitions.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+         <h2 class="head">STATISTICS</h2>
+        <section id="statistics">
+            <div>
+                <div class="fade">
+                    <img src="https://ieee-zsb.org/images/talks.jpg" style="width:50px;height: 50px;">
+                    <div class="line"></div>
+                    <p>18 <br>Talks</p>
+                </div>
+                
+                <div class="fade">
+                    <img src="https://ieee-zsb.org/images/workshops2.png" style="width:50px;height: 50px;">
+                    <div class="line"></div>
+                    <p>15 <br>Workshops</p>
+                </div>
+                
+                <div class="fade">
+                    <img src="https://ieee-zsb.org/images/workshops2.png" style="width:50px;height: 50px;">
+                    <div class="line"></div>
+                    <p>9<br>Tracks</p>
+                </div>
+                
+                <div class="fade">
+                    <img src="https://ieee-zsb.org/images/users.png" style="width:50px;height: 50px;">
+                    <div class="line"></div>
+                    <p>1580+<br>Attendees</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="speakers" >
+            <h2>PREVIOUS SPEAKERS</h2>
+            <div>
+                <div>
+                    <div  class="sp1 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Amr Abulnaga.jpg');">
+                        <div>
+                            <p>Amr Abulnaga</p>
+                            <p> The Regional Technical Consultant at Oracle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp2 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ghada Bahig.jpg');">
+                        <div>
+                            <p>Ghada Bahig</p>
+                            <p>Engineering Manager at Mentor Graphics</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp3 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Amr Ali.jpg');">
+                        <div>
+                            <p>Amr Ali</p>
+                            <p>Big data and Analytics Technical Consultant at Oracle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>                 
+                    <div class="sp4 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Omar Amer.jpg');">
+                        <div>
+                            <p>Omar Amer</p>
+                            <p>Machine Learning Engineer at IBM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp5 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ahmed Abd-Elfattah.jpg');">
+                        <div>
+                            <p>Ahmed Abd-Elfattah</p>
+                            <p>Knowledge Management Manager at Valeo</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="sp6 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ahmed Said.jpg');">
+                        <div>
+                            <p>Ahmed Said</p>
+                            <p>IBM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp7 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ayman Ragab.jpg');">
+                        <div>
+                            <p>Ayman Ragab</p>
+                            <p>Consultant in The R_D Department at NTRA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>    
+                    <div class="sp8 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Mohamed Abd-Elmonem.jpg');">
+                        <div>
+                            <p>Mohamed Abd-Elmonem</p>
+                            <p>Radio Optimization Senior Engineer at Vodafone</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>    
+                    <div class="sp9 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Mostafa Helmy.jpg');">
+                        <div>
+                            <p>Mostafa Helmy</p>
+                            <p>Identity _ Access Management Advisor at RSA Security</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp10 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Nahel Mohamed.jpg');">
+                        <div>
+                            <p>Nahel Mohamed</p>
+                            <p>Innovation Support Manager at TIEC</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div>   
+                    <div class="sp11 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Oriette M. Nayel.jpg');">
+                        <div>
+                            <p>Oriette M. Nayel</p>
+                            <p>University Relations Leader at IBM</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div>   
+                    <div class="sp12 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Peter George.jpg');">
+                        <div>
+                            <p>Peter George</p>
+                            <p>Senior Analyst at RSA Security</p>
+                        </div>
+                    </div>
+                 </div>
+            
+                <div>        
+                    <div class="sp13 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Abdalla Amr.jpg');">
+                        <div>
+                            <p>Abdalla Amr</p>
+                            <p>TIEC Ambassador</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp14 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ahmed Samir.jpg');">
+                        <div>
+                            <p>Ahmed Samir</p>
+                            <p>Enterprise Technical Services Advisor@Dell EMC</p>
+                        </div>
+                    </div>
+                </div>    
+                
+                <div>   
+                    <div class="sp15 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Amir Elsenousy.jpg');">
+                        <div>
+                            <p>Amir Elsenousy</p>
+                            <p>Research projects manager @ NTRA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp16 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Bassem Ibrahim.jpg');">
+                        <div>
+                            <p>Bassem Ibrahim</p>
+                            <p>Network solutions architect @ Ericsson</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div>    
+                    <div class="sp17 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Ebeid Atef.jpg');">
+                        <div>
+                            <p>Ebeid Atef</p>
+                            <p>Microsoft Education Technical</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>    
+                    <div class="sp18 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Hesham Elzoghby.jpg');">
+                        <div>
+                            <p>Hesham Elzoghby</p>
+                            <p>Cyber Talents</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="sp19 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Hesham Eraqi.jpg');">
+                        <div>
+                            <p>Hesham Eraqi</p>
+                            <p>Deep learning Secnior expert @Valeo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>    
+                    <div class="sp20 fade" style="background-image: url('https://ieee-zsb.org/mutex/images/speakers/Mohamed Elgharably.jpg');">
+                        <div>
+                            <p>Mohamed Elgharably</p>
+                            <p>Networks chief technology officer@Ericsson</p>
+                        </div>
+                    </div>
+                </div>    
+                
+            </div>
+                
+        </section>
+        
+        <br>
+        <br>
+        
+        <section id="sponsers">
+            <h2>2019 PARTNERS</h2>
+            <div>
+                <div class="spon1 fade">
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Official%20Partner.png" style="width: 150px;height: 120px;">
+                </div>
+                <p> Official Partner</p>
+            </div>
+            
+            
+            <div class="spon2 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Hosting%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Hosting Partner</p>
+                </div>
+            
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Strategic%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Strategic Partner</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Catering%20Sponsor.png" style="width: 150px;height: 120px;">
+                    <p>Catering Sponsor</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Transportation%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Transportation Partner</p>
+                </div>
+                
+            </div>
+            
+            
+            <div class="spon2 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Content%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Content%20Partner(2).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Content%20Partner(1).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Content%20Partner(3).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+            </div>
+            
+            
+            <div class="spon3 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Startup%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Startup Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Startup%20Partner(1).png" style="width: 150px;height: 120px;">
+                    <p>Startup Partner</p>
+                </div>
+                
+            </div>  
+            
+            
+        </section>
+        <br>
+        <br>
+        
+        
+        <section id="sponsers">
+            <h2>2018 PARTNERS</h2>
+            <div>
+                <div class="spon1 fade">
+                    <img src="https://ieee-zsb.org/images/sponsors/19/Official%20Partner.png" style="width: 150px;height: 120px;">
+                </div>
+                <p> Official Partner</p>
+            </div>
+            
+            
+            <div class="spon2 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Gold%20Sponsor.png" style="width: 150px;height: 120px;">
+                    <p>Gold Sponsor</p>
+                </div>
+            
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Community%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Community Partner</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Strategic%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Strategic Sponsor</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Gold%20Sponsor(1).png" style="width: 150px;height: 120px;">
+                    <p>Gold Partner</p>
+                </div>
+                
+            </div>
+            
+            
+            <div class="spon2 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Content%20Partner(2).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Content%20Partner.png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Content%20Partner(3).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/18/Content%20Partner(1).png" style="width: 150px;height: 120px;">
+                    <p>Content Partner</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        
+        
+        <section id="sponsers">
+            <h2>2017 PARTNERS</h2>
+            <div class="fade">
+                <div class="spon1">
+                    <img src="https://ieee-zsb.org/images/sponsors/17/Main%20Sponsor.png" style="width: 150px;height: 120px;">
+                </div>
+                <p>Main Partner</p>
+            </div>
+            
+            
+            <div class="spon2 fade">
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/17/Content%20Partner(2).png" style="width: 150px;height: 120px;">
+                    <p>Gold Sponsor</p>
+                </div>
+            
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/17/Content%20Partner(3).png" style="width: 150px;height: 120px;">
+                    <p>Community Partner</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/17/Content%20Partner(3).png" style="width: 150px;height: 120px;">
+                    <p>Strategic Sponsor</p>
+                </div>
+                
+                <div>
+                    <img src="https://ieee-zsb.org/images/sponsors/17/Content%20Partner(1).png" style="width: 150px;height: 120px;">
+                    <p>Gold Partner</p>
+                </div>
+                
+            </div>
+        </section>
+        <br>
+        <br>
+            
+        <footer>
+            <div class="end">
+                    <div>
+                        <img src="https://ieee-zsb.org/images/MUTEX%20White.png" style="width:170px;margin:50px;">
+                        <p style="margin:0px 0px 50px 25px;color:white;">Website crafted by IEEE Zagazig CS.</p>
+                    </div>
+                    <div style="margin:50px">
+                        <a  href="https://www.facebook.com/MUTEX.Summit/" target="_blank"><img src="pic/facebook.svg"></a>
+                        <a  href="https://www.linkedin.com/company/mutexsummit/" target="_blank" ><img src="pic/linkedin.svg" ></a>
+                        <a  href="https://twitter.com/MutexSummit" target="_black" ><img src="pic/twitter.svg" ></a>
+                        <a href="https://www.instagram.com/mutex.summit/" target="_black"><img src="pic/instagram.svg"></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="socialMedia">
+                
+            </div>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script  src="mutexjs.js"></script>
+    </body>
+    
+
+</html>
